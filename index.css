@@ -1,0 +1,112 @@
+*{
+    margin:0px;
+    padding:0px;
+    font-family: "Quicksand", sans-serif;
+}
+.card{
+    position:relative;
+    top:50px;
+    height:400px;
+    box-shadow: 0 0.2rem 0.3rem rgba(0,0,0,0.2);
+    background:#a5bbdd;
+    margin:auto;
+    transform:translate3d(0,0,0);
+    overflow: hidden;
+    font-weight:600;
+}
+.weathericon{
+    position:relative;
+    margin:auto;
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+}
+#my{
+   position:relative;
+   top:156px;
+   text-align: center;
+   justify-content: center;
+   margin:auto;
+   /* left:72px; */
+}
+#my1{
+    position:relative;
+    top:181px;
+    text-align: center;
+    justify-content: center;
+    margin:auto;
+}
+#my2{
+    position:relative;
+    top:187px;
+    text-align: center;
+    justify-content: center;
+    margin:auto;
+}
+#city{
+    position:relative;
+    top:150px;
+    text-align: center;
+    justify-content: center;
+    margin:auto;
+}
+.wave{
+    opacity: 0.3;
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    background: white;
+    width: 50rem;
+    height: 50rem;
+    margin-left: -20rem;
+    margin-top: -20rem;
+    transform-origin: 50% 48%;
+    border-radius: 43%;
+    animation: drift 4000ms infinite linear;
+    z-index: 1;
+}
+.wave.-two{
+    animation: drift 7000ms infinite linear;
+    opacity: 0.1;
+    z-index: 3 !important;
+}
+.wave.-three{
+    animation: drift 5000ms infinite linear;
+    z-index: 2 !important;
+    opacity: 0.2;
+}
+@keyframes drift {
+    from{
+        transform:rotate(0deg);
+    }
+    from{
+        transform:rotate(360deg);
+    }
+}
+#iconcity{
+    animation:rotates 3s linear infinite alternate;
+}
+@keyframes rotates {
+    from{
+        transform:translateX(-0.1rem);
+    }
+    to{
+        transform:translateX(0.1rem);
+    }
+}
+#symbol{
+    position:absolute;
+    top:21px;
+    left:110px;
+    margin:auto;
+    display:block;
+    animation:icon 3s linear infinite alternate;
+}
+@keyframes icon {
+    from{
+        transform:scale(1.1);
+    }
+    to{
+        transform:scale(1.3);
+    }
+}
