@@ -2,9 +2,11 @@
 Node Js Weather App is Created Using OpenWeatherApI And It's provide Weather Information
 
 Prerequisite
+
 You need to have NodeJS installed in your machine.
 
 Install
+
 Clone the repository.
 Go to the repository folder and run the following command in your terminal:
 npm install
